@@ -2,7 +2,7 @@
   "name": "",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://AbdelrahmanDyaa.github.io/Tailwind_Assignment",
+  "homepage": "https://AbdelrahmanDyaa.github.io/",
   "type": "module",
   "scripts": {
     "dev": "vite",
