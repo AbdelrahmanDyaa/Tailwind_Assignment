@@ -8,18 +8,23 @@ import Contact from './Pages/Contact/Contact';
 import NotFound from './Pages/NotFound/NotFound';
 
 let routes = createBrowserRouter([
-    {path:'', element:<Layout />, children:[
-        {index:true, element:<Home />},
-        {path:'about', element:<About />},
-        {path:'portfolio', element:<Portfolio />},
-        {path:'contact', element:<Contact />},
-        {path:'*', element:<NotFound />},
-    ]},
-]);
+    {
+        path: '/',
 
+        element: <Layout />,
+
+        children: [
+            { index: true, element: <Home /> },
+            { path: 'about', element: <About /> },
+            { path: 'portfolio', element: <Portfolio /> },
+            { path: 'contact', element: <Contact /> },
+            { path: '*', element: <NotFound /> },
+        ]
+    },
+]);
 
 function App() {
     return <RouterProvider router={routes}></RouterProvider>
 }
 
-export default App
+export default App;
