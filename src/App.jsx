@@ -7,7 +7,7 @@ import Portfolio from './Pages/Portfolio/Portfolio';
 import Contact from './Pages/Contact/Contact';
 import NotFound from './Pages/NotFound/NotFound';
 
-let x = createBrowserRouter([
+let routes = createBrowserRouter([
     {path:'', element:<Layout />, children:[
         {index:true, element:<Home />},
         {path:'about', element:<About />},
@@ -19,7 +19,7 @@ let x = createBrowserRouter([
 
 
 function App() {
-    return <RouterProvider router={x}></RouterProvider>
+    return <RouterProvider router={routes}></RouterProvider>
 }
 
 export default App
